@@ -7,10 +7,11 @@
         "text-color": "#111",
 
         "header": {
-        "background-color": "#ffffff",
-        "foreground-color": "#111"
+            "background-color": "#ffffff",
+            "foreground-color": "#111"
         },
-
+        "body-background": "#fff",
+        "body-foreground": "#aaa",
         "card-background": "#ffffff",
         "card-foreground": "#000",
         "price-foreground": "#111",
@@ -25,6 +26,8 @@
             "background-color": "#f5c400",
             "foreground-color": "#000"
         },
+        "body-background": "#111",
+        "body-foreground": "#fff",
         "card-background": "#1c1c1c",
         "card-foreground": "#aaa",
         "price-foreground": "#000",
