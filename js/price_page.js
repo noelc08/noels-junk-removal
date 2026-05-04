@@ -34,7 +34,7 @@ async function update_info() {
         return console.error("Could not update the name. Please report this error to the owner.");
     }
     name.innerText = data.header.name;
-
+    document.getElementByTagName("title").innerText = data.header.name;
     const tagline = document.getElementById("tagline");
     if(!tagline || !data.header.tagline){
         return console.error("Could not update the tagline. Please report this error to the owner.");
