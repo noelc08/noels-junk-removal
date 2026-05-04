@@ -1,5 +1,5 @@
 async function fetch_prices(){
-    const response = await fetch("../../assets/info.json");
+    const response = await fetch("./assets/info.json");
     return await response.json();
 }
 
