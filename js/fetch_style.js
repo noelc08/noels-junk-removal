@@ -19,9 +19,6 @@ function apply_theme(theme) {
     const buttons = document.querySelectorAll(".btn");
     const footer = document.querySelector("footer");
 
-    body.style.background = theme["background-color"];
-    body.style.color = theme["text-color"];
-
     body.style.background = theme["body-background"];
     body.style.color = theme["body-foreground"];
     
