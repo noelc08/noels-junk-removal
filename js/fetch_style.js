@@ -19,9 +19,6 @@ function apply_theme(theme) {
     const buttons = document.querySelectorAll(".btn");
     const footer = document.querySelector("footer");
 
-    body.style.background = "";
-    body.style.color = "";
-
     body.style.background = theme["body-background"];
     body.style.color = theme["body-foreground"];
 
@@ -50,34 +47,29 @@ function apply_theme(theme) {
 }
 
 function toggleTheme() {
-    const data = window.__themeData;
-    if (!data) return;
-
-    const current = localStorage.getItem("theme-mode") || data.main["default-mode"];
+    const current = localStorage.getItem("theme-mode") || "light-theme";
     const next = current === "dark-theme" ? "light-theme" : "dark-theme";
 
-    save_theme(next);
-    apply_theme(data[next]);
+    setTheme(next);
 
     const btn = document.getElementById("theme-toggle");
-    if (btn) {
-        btn.innerText = next === "dark-theme" ? "☀️" : "🌙";
-    }
+    btn.innerText = next === "dark-theme" ? "☀️" : "🌙";
 }
 
 async function main_theme() {
     const data = await fetch_theme();
 
-    window.__themeData = data;
-
     const mode = get_saved_theme(data);
-
     apply_theme(data[mode]);
+
+    window.setTheme = function(newMode) {
+        apply_theme(data[newMode]);
+        save_theme(newMode);
+    };
 
     const btn = document.getElementById("theme-toggle");
     if (btn) {
         btn.innerText = mode === "dark-theme" ? "☀️" : "🌙";
-        btn.onclick = toggleTheme;
     }
 }
 
