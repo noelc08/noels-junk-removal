@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junk Removal Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+
+    header {
+      background: #f5c400;
+      color: #000;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f5c400;
+      color: #000;
+      padding: 12px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    #theme-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        background: #f5c400;
+        color: #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 22px;
+        cursor: pointer;
+
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+        transition: transform 0.2s ease, background 0.3s ease;
+        z-index: 9999;
+        }
+
+        #theme-toggle:hover {
+        transform: scale(1.1);
+        }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="name">Noel's Junk Removal</h1>
+    <p id="tagline">Fast • Reliable • Local Service</p>
+    <p class="price">
+    $<span id="min_price">100</span> –
+    $<span id="max_price">400</span>+ Based on Load Size
+    </p>
+    <p>Call/Text: <span id="phone_num"></span></p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Services</h2>
+      <ul id="services">
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Pricing Info</h2>
+      <p>
+        Pricing is based on load size, material type, and accessibility.
+        Heavy or special items may increase cost.
+      </p>
+      <ul>
+        <li>Small Loads: $100 – $150</li>
+        <li>Medium Loads: $150 – $300</li>
+        <li>Full Loads: $300 – $400+</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Call or text for a quick estimate</li>
+        <li>We confirm price on arrival</li>
+        <li>We load and haul everything</li>
+        <li>You’re done</li>
+      </ol>
+      <a class="btn" href="tel:4086427854">Call / Text Now</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © Junk Removal Services - Local Independent Operator
+  </footer>
+
+  <div id="theme-toggle" onclick="toggleTheme()">
+    🌙
+    </div>
+
+  <script src="../js/price_page.js"></script>
+  <script src="../js/fetch_style.js"></script>
+</body>
+</html>
