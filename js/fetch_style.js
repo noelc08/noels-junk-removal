@@ -50,10 +50,16 @@ function toggleTheme() {
     const current = localStorage.getItem("theme-mode") || "light-theme";
     const next = current === "dark-theme" ? "light-theme" : "dark-theme";
 
-    setTheme(next);
+    localStorage.setItem("theme-mode", next);
+
+    if (window.__themeData) {
+        apply_theme(window.__themeData[next]);
+    }
 
     const btn = document.getElementById("theme-toggle");
-    btn.innerText = next === "dark-theme" ? "☀️" : "🌙";
+    if (btn) {
+        btn.innerText = next === "dark-theme" ? "☀️" : "🌙";
+    }
 }
 
 async function main_theme() {
