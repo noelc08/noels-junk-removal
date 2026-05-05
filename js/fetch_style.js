@@ -72,7 +72,7 @@ async function main_theme() {
         btn.innerText = mode === "dark-theme" ? "☀️" : "🌙";
     }
     if(data.under_development){
-            const newDiv = document.createElement('div');
+        const newDiv = document.createElement('div');
         newDiv.textContent = 'This webpage is under development and is subject to changes';
         document.body.appendChild(newDiv);
     }
