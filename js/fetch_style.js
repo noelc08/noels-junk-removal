@@ -1,5 +1,5 @@
 async function fetch_theme() {
-    const response = await fetch("../assets/ui.json");
+    const response = await fetch("assets/ui.json");
     return await response.json();
 }
 
