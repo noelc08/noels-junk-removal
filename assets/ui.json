@@ -1,7 +1,7 @@
 {
     "main": {
         "default-mode": "dark-theme"
-    }
+    },
     "under_development": true,
     "light-theme": {
         "background-color": "#f5f5f5",
