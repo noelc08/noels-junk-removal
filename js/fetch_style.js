@@ -78,4 +78,6 @@ async function main_theme() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", main_theme);
+document.addEventListener("DOMContentLoaded", async () => {
+    await main_theme();
+});
