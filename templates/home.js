@@ -28,7 +28,7 @@ function HomeTemplate() {
         </div>
 
         <div id="side">
-          <img src="./assets/images/jobs/IMG_20260507_104730921.jpg" alt="Job example" />
+          <img src="assets/images/jobs/IMG_20260507_104730921.jpg" alt="Job example" />
         </div>
       </div>
     `,
@@ -51,7 +51,7 @@ function HomeTemplate() {
 
         "#text": {
           flex: "0 0 60%",
-          minWidth: "0" // 🔥 prevents flex overflow bugs
+          minWidth: "0"
         },
 
         "#side": {
@@ -72,17 +72,17 @@ function HomeTemplate() {
       mobile: {
         ".content-wrapper": {
           flexDirection: "column",
-          alignItems: "stretch" // 🔥 key fix
+          alignItems: "stretch"
         },
 
         "#text": {
           flex: "unset",
-          width: "100%" // 🔥 reset flex behavior completely
+          width: "100%"
         },
 
         "#side": {
           flex: "unset",
-          width: "100%" // 🔥 full reset
+          width: "100%"
         },
 
         "#side img": {
