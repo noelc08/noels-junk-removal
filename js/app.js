@@ -6,8 +6,8 @@ import AboutTemplate from "../templates/about.js";
 import ServicesTemplate from "../templates/services.js";
 import ContactTemplate from "../templates/contact.js";
 
-const styles = await fetch('/noels-junk-removal/assets/styles.json').then(r => r.json());
-const basic_info = await fetch('/noels-junk-removal/assets/info.json').then(r => r.json());
+const styles = await fetch('https://raw.githubusercontent.com/noelc08/noels-junk-removal/main/assets/styles.json').then(r => r.json());
+const basic_info = await fetch('https://raw.githubusercontent.com/noelc08/noels-junk-removal/main/assets/info.json').then(r => r.json());
 
 const templates = {
   home: HomeTemplate,
