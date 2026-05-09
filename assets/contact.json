@@ -1,6 +1,23 @@
 {
-    "name": "Noel's Junk Removal",
-    "phone": "(408) 642-7854",
-    "email": "",
-    "service_area": ["Atwater", "Merced", "Winton"]
+    "name": {
+        "type": "text",
+        "data": "Atwater Cleanouts",
+        "description": "The company name"
+    },
+
+    "phone": {
+        "type": "text",
+        "data": "(408) 642-7854",
+        "description": "Main business phone number"
+    },
+
+    "service_area": {
+        "type": "array",
+        "data": [
+            "Atwater",
+            "Merced",
+            "Winton"
+        ],
+        "description": "Cities we service"
+    }
 }

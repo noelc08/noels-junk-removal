@@ -1,0 +1,38 @@
+{
+  "default": "dark_theme",
+
+  "dark_theme": {
+    "styles": {
+      "--navbar-bg": "#c99700",
+      "--navbar-hover": "#d9a800",
+      "--text-color": "#1a1a1a",
+      "--main-margin": "clamp(12px, 4vw, 80px)",
+      "--body-bg": "#1a1c1f",
+      "--content-text": "#f1f1f1",
+      "--footer-bg": "#111",
+      "--footer-color": "#f5f5f5",
+      "--footer-border-color": "#f5c400",
+      "--footer-brand-color": "#cfcfcf",
+      "--footer-contact-color": "#f5c400",
+      "--footer-numberlink": "white"
+    }
+  },
+
+  "light_theme": {
+    "styles": {
+      "--navbar-bg": "#ffffff",
+      "--navbar-hover": "#f2f2f2",
+      "--text-color": "#1a1a1a",
+      "--main-margin": "clamp(12px, 4vw, 80px)",
+      "--body-bg": "#ffffff",
+      "--content-text": "#1a1a1a",
+      "--footer-bg": "#ffffff",
+      "--footer-color": "#222",
+      "--footer-border-color": "#f5c400",
+      "--footer-brand-color-h2": "#c28d00",
+      "--footer-brand-color-p":"444",
+      "--footer-contact-color": "#333",
+      "--footer-numberlink": "1a1a1a"
+    }
+  }
+}

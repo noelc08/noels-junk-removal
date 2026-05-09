@@ -1,31 +1,85 @@
 {
-    "contact": {
-        "phone_num": "(408) 642-7854"
-    },
-    "header": {
-        "name": "Noel's Junk Removal",
-        "tagline": "Fast • Reliable • Local Service",
-        "min_price": 100,
-        "max_price": 400
-    },
-    "small": {
-        "min_price": 100,
-        "max_price": 150
-    },
-    "medium": {
-        "min_price": 150,
-        "max_price": 300
-    },
-    "full": {
-        "min_price": 300,
-        "max_price": 400
+    "name": {
+        "data": "Noel's Junk Removal",
+        "description": "Business name"
     },
 
-    "services": [
-        "Furniture Removal",
-        "Appliance Removal",
-        "Garage Cleanouts",
-        "Yard Waste & Debris",
-        "Light Construction Debris"
-    ]
+    "tagline": {
+        "data": "Fast • Reliable • Local Service",
+        "description": "Short marketing tagline shown on homepage"
+    },
+
+    "contact": {
+        "phone_num": {
+            "data": "(408) 642-7854",
+            "description": "Primary contact phone number"
+        }
+    },
+
+    "pricing": {
+        "small": {
+            "min_price": {
+                "data": 100,
+                "description": "Minimum price for small jobs"
+            },
+            "max_price": {
+                "data": 150,
+                "description": "Maximum price for small jobs"
+            }
+        },
+
+        "medium": {
+            "min_price": {
+                "data": 150,
+                "description": "Minimum price for medium jobs"
+            },
+            "max_price": {
+                "data": 300,
+                "description": "Maximum price for medium jobs"
+            }
+        },
+
+        "full": {
+            "min_price": {
+                "data": 300,
+                "description": "Minimum price for full load jobs"
+            },
+            "max_price": {
+                "data": 400,
+                "description": "Maximum price for full load jobs"
+            }
+        }
+    },
+
+    "services": {
+        "data": {
+            "intro": "Here’s what I usually take care of. If it fits in a truck and it’s safe to haul, I can probably help.",
+
+            "items": [
+            {
+                "title": "Junk Removal",
+                "description": "General clutter, unwanted items, and cleanouts. Point it out, I’ll handle the rest."
+            },
+            {
+                "title": "Cleanouts",
+                "description": "Garages, houses, storage units. Full or partial cleanouts depending on what you need gone."
+            },
+            {
+                "title": "Furniture Pickup",
+                "description": "Sofas, tables, mattresses, and bulky items you don’t want to deal with."
+            },
+            {
+                "title": "Construction Debris",
+                "description": "Light job site cleanup like wood, drywall, and general non-hazard materials."
+            }
+            ],
+
+            "noteTitle": "Quick note",
+            "note": [
+            "I don’t handle hazardous waste, chemicals, paint, fuel, asbestos, or anything unsafe to transport.",
+            "Everything else is pretty straightforward. If you’re unsure, just ask."
+            ]
+        },
+        "description": "Services page content"
+    }
 }
