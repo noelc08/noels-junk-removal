@@ -51,7 +51,6 @@ class Updater {
     }
 
     getDescription(path) {
-        // supports nested paths like "pricing.small.min_price"
         const parts = path.split(".");
 
         let current = this.basic_info;
