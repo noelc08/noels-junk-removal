@@ -72,7 +72,13 @@ function HomeTemplate() {
       mobile: {
         ".content-wrapper": {
           flexDirection: "column",
-          alignItems: "stretch"
+          alignItems: "stretch",
+
+          height: "100%",
+          overflowY: "auto",
+          overflowX: "hidden",
+
+          WebkitOverflowScrolling: "touch"
         },
 
         "#text": {
@@ -86,8 +92,11 @@ function HomeTemplate() {
         },
 
         "#side img": {
+          display: "block",
+          width: "100%",
           maxWidth: "100%",
-          width: "100%"
+          height: "auto",
+          objectFit: "contain"
         }
       }
     }
