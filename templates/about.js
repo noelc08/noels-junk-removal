@@ -74,18 +74,24 @@ function AboutTemplate() {
       mobile: {
         ".about-layout": {
           flexDirection: "column",
-          gap: "20px"
+          gap: "20px",
+      
+          height: "100%",
+          overflowY: "auto",
+          overflowX: "hidden",
+      
+          WebkitOverflowScrolling: "touch"
         },
-
+      
         ".about-left": {
           width: "100%"
         },
-
+      
         ".about-right": {
           width: "100%",
           justifyContent: "flex-start"
         },
-
+      
         ".about-right img": {
           maxWidth: "100%",
           height: "auto"
