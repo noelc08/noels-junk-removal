@@ -40,7 +40,7 @@ function AboutTemplate() {
           display: "flex",
           alignItems: "flex-start",
           gap: "40px",
-          width: "100%"
+          width: "100%",
           height: "calc(100vh - 80px)",
           overflowY: "auto"
         },
