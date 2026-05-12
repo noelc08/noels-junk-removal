@@ -55,7 +55,7 @@ function AboutTemplate() {
 
         ".about-right img": {
           width: "100%",
-          maxWidth: "220px",
+          maxWidth: "350px",
           borderRadius: "12px",
           objectFit: "cover"
         },
