@@ -28,7 +28,7 @@ function AboutTemplate() {
         </div>
 
         <div class="about-right">
-          <img src="assets/images/me.jpg" alt="Noel - Junk Removal" />
+          <img src="assets/images/me.png" alt="Noel - Junk Removal" />
         </div>
 
       </div>
