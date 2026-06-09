@@ -33,9 +33,9 @@
       "--footer-color": "#222",
       "--footer-border-color": "#f5c400",
       "--footer-brand-color-h2": "#c28d00",
-      "--footer-brand-color-p":"444",
+      "--footer-brand-color-p":"#444",
       "--footer-contact-color": "#333",
-      "--footer-numberlink": "1a1a1a"
+      "--footer-numberlink": "#1a1a1a"
     },
     "meta": {
       "icon": "./icons/moon.png"
