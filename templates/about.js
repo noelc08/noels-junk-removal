@@ -9,7 +9,7 @@ function AboutTemplate() {
           <h1>About</h1>
 
           <p>
-            I run a local junk removal and cleanout service around the area.
+            I run a local junk removal and cleanout service serving Atwater, Merced, Winton, Livingston, and nearby communities throughout Merced County.
             Nothing fancy. Just honest work, showing up on time, and getting the job done without the runaround.
           </p>
 
