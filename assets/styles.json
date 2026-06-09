@@ -15,6 +15,9 @@
       "--footer-brand-color": "#cfcfcf",
       "--footer-contact-color": "#f5c400",
       "--footer-numberlink": "white"
+    },
+    "meta": {
+      "icon": "./icons/sun.png"
     }
   },
 
@@ -33,6 +36,32 @@
       "--footer-brand-color-p":"444",
       "--footer-contact-color": "#333",
       "--footer-numberlink": "1a1a1a"
+    },
+    "meta": {
+      "icon": "./icons/moon.png"
+    }
+  },
+  "forest_theme": {
+    "styles": {
+      "--navbar-bg": "#1e3a2f",
+      "--navbar-hover": "#275140",
+
+      "--text-color": "#eaf4ee",
+      "--main-margin": "clamp(12px, 4vw, 80px)",
+
+      "--body-bg": "#0b1510",
+      "--content-text": "#dfeee5",
+
+      "--footer-bg": "#0a120e",
+      "--footer-color": "#d6e7dc",
+      "--footer-border-color": "#3f6f56",
+
+      "--footer-brand-color": "#b7d2c3",
+      "--footer-contact-color": "#86b89a",
+      "--footer-numberlink": "#cfeadf"
+    },
+    "meta": {
+      "icon": "./icons/forest.png"
     }
   }
 }
