@@ -1,15 +1,18 @@
+import Slideshow from "./slideshow.js";
+
 class Renderer {
   constructor(styles, templates, updater) {
     this.styles = styles;
     this.templates = templates;
     this.updater = updater;
 
-    // Restore last view from cache, default to home
     this.currentView = localStorage.getItem("currentView") || "home";
 
     this.isRendering = false;
 
     this.theme = localStorage.getItem("theme") || styles.default;
+
+    this.activeViewControllers = [];
   }
 
   init() {
@@ -19,7 +22,6 @@ class Renderer {
       this.renderView();
     });
 
-    // NAVIGATION (state-based, no URLs)
     document.addEventListener("click", (e) => {
       const link = e.target.closest("[data-page]");
       if (!link) return;
@@ -56,15 +58,26 @@ class Renderer {
       return this.renderView();
     }
 
+    this.cleanupView();
+
     this.render(template);
 
-    // IMPORTANT: hydrate AFTER DOM is guaranteed updated
     requestAnimationFrame(() => {
       if (view === "services") this.hydrateServices();
     });
 
     document.title =
       `${view.charAt(0).toUpperCase() + view.slice(1)} | ${this.updater.getBusinessName()}`;
+  }
+
+  cleanupView() {
+    this.activeViewControllers.forEach(ctrl => {
+      if (ctrl && typeof ctrl.destroy === "function") {
+        ctrl.destroy();
+      }
+    });
+
+    this.activeViewControllers = [];
   }
 
   applyTheme() {
@@ -82,15 +95,18 @@ class Renderer {
 
     const icon = document.getElementById("theme-toggle");
     if (icon) {
-      const isDark = this.theme === "dark_theme";
+      const meta = themeConfig.meta || {};
+      icon.src =
+          meta.icon ||
+          (this.theme === "dark_theme"
+            ? "./assets/icons/sun.png"
+            : "./assets/icons/moon.png");
 
-      icon.src = isDark
-        ? "./assets/icons/sun.png"
-        : "./assets/icons/moon.png";
-
-      icon.alt = isDark
-        ? "Switch to light mode"
-        : "Switch to dark mode";
+      icon.alt = meta.label
+        ? `Switch to ${meta.label}`
+        : this.theme === "dark_theme"
+          ? "Switch to light mode"
+          : "Switch to dark mode";
     }
   }
 
@@ -124,18 +140,16 @@ class Renderer {
 
     let css = "";
 
-    // BASE STYLES
     if (styleObj.base) {
       css += this.buildCSS(styleObj.base);
     }
 
-    // MOBILE STYLES
     if (styleObj.mobile) {
       css += `
-  @media (max-width: 700px) {
-  ${this.buildCSS(styleObj.mobile)}
-  }
-  `;
+@media (max-width: 700px) {
+${this.buildCSS(styleObj.mobile)}
+}
+`;
     }
 
     let styleTag = document.getElementById("template-styles");
@@ -158,7 +172,6 @@ class Renderer {
       for (const prop in styleObj[selector]) {
         const value = styleObj[selector][prop];
 
-        // convert camelCase → kebab-case (textIndent → text-indent)
         const cssProp = prop.replace(/[A-Z]/g, m => `-${m.toLowerCase()}`);
 
         css += `${cssProp}: ${value};`;
@@ -227,6 +240,12 @@ class Renderer {
     if (body) {
       body.innerHTML = data.note.map(p => `<p>${p}</p>`).join("");
     }
+
+    
+    const slideshow = new Slideshow("assets/images/jobs/index.json");
+    slideshow.init();
+
+    this.activeViewControllers.push(slideshow);
   }
 
   toggleTheme() {
