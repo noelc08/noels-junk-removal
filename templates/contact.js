@@ -70,20 +70,20 @@ function ContactTemplate() {
           color: "var(--content-text)",
           marginBottom: "10px"
         },
-
+        
         ".contact-btn": {
           display: "inline-block",
-          background: "#f5c400",
-          color: "#1a1a1a",
+          background: "var(--footer-border-color)",
+          color: "var(--text-color)",
           padding: "12px 18px",
           textDecoration: "none",
           fontWeight: "bold",
           borderRadius: "8px",
           marginBottom: "10px"
         },
-
+        
         ".contact-btn:hover": {
-          background: "#d9a800"
+          background: "var(--navbar-hover)"
         },
 
         ".contact-note": {
