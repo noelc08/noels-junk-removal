@@ -18,6 +18,8 @@ function HomeTemplate() {
           </p>
 
           <p>
+            I provide junk removal and cleanout services in Atwater, Merced, Winton, Livingston,
+            and nearby communities throughout Merced County.
             I handle general junk removal, small cleanouts, and hauling for items
             that are safe and reasonable to move. That can include household clutter,
             garage cleanouts, yard debris, and similar jobs. Construction junk removal
@@ -28,7 +30,7 @@ function HomeTemplate() {
         </div>
 
         <div id="side">
-          <img src="assets/images/jobs/IMG_20260507_104730921.jpg" alt="Job example" />
+          <img src="assets/images/jobs/IMG_20260507_104730921.jpg" alt="Junk removal job completed in Merced County" />
         </div>
       </div>
     `,
