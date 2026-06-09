@@ -17,7 +17,7 @@
       "--footer-numberlink": "white"
     },
     "meta": {
-      "icon": "./icons/sun.png"
+      "icon": "./assets/icons/sun.png"
     }
   },
 
@@ -38,7 +38,7 @@
       "--footer-numberlink": "#1a1a1a"
     },
     "meta": {
-      "icon": "./icons/moon.png"
+      "icon": "./assets/icons/moon.png"
     }
   },
   "forest_theme": {
@@ -61,7 +61,7 @@
       "--footer-numberlink": "#cfeadf"
     },
     "meta": {
-      "icon": "./icons/forest.png"
+      "icon": "./assets/icons/forest.png"
     }
   }
 }
