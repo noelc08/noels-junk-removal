@@ -1,5 +1,3 @@
-import Slideshow from "./slideshow.js";
-
 class Renderer {
   constructor(styles, templates, updater) {
     this.styles = styles;
