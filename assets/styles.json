@@ -14,7 +14,9 @@
       "--footer-border-color": "#f5c400",
       "--footer-brand-color": "#cfcfcf",
       "--footer-contact-color": "#f5c400",
-      "--footer-numberlink": "white"
+      "--footer-numberlink": "white",
+      "--footer-brand-color-h2": "#cfcfcf",
+      "--footer-brand-color-p": "#cfcfcf"
     },
     "meta": {
       "icon": "./assets/icons/sun.png"
@@ -35,7 +37,9 @@
       "--footer-brand-color-h2": "#c28d00",
       "--footer-brand-color-p":"#444",
       "--footer-contact-color": "#333",
-      "--footer-numberlink": "#1a1a1a"
+      "--footer-numberlink": "#1a1a1a",
+      "--footer-brand-color-h2": "#c28d00",
+      "--footer-brand-color-p": "#444"
     },
     "meta": {
       "icon": "./assets/icons/moon.png"
@@ -58,7 +62,9 @@
 
       "--footer-brand-color": "#b7d2c3",
       "--footer-contact-color": "#86b89a",
-      "--footer-numberlink": "#cfeadf"
+      "--footer-numberlink": "#cfeadf",
+      "--footer-brand-color-h2": "#b7d2c3",
+      "--footer-brand-color-p": "#d6e7dc"
     },
     "meta": {
       "icon": "./assets/icons/forest.png"
